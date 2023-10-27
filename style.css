@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+}
+
+main {
+    width : 1024px;
+    min-height: 100vh;
+    border: 2px gray solid;
+    margin: 0px auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.parent {
+    position: relative;
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    background-image: url(./image/pic1.jpg);
+    background-size: cover;
+    border-radius: 9999px;
+}
+
+.child {
+    position: absolute;
+    top: 75%;
+    left: 73%;
+    background-color: greenyellow;
+    width: 55px;
+    height: 55px;
+    border-radius: 9999px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 10px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 16px;
+    width: 900px;
+    height: 1000px;
+}
+
+.gallery .image {
+    background-color: black;
+    background-position: center;
+}
+
+
+#extend-col {
+    grid-column: span 2;
+    width: 100%;
+}
+
+#profile-link {
+    color: black;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+#profile-link:hover {
+    color: blue;
+}
+
+.gallery .image:nth-child(1) {
+    background-image: url(./image/pic2.jpg);
+    background-size: cover;
+}
+
+.gallery .image:nth-child(2) {
+    background-image: url(./image/pic5.jpg);
+    background-size: cover;
+}
+
+.gallery .image:nth-child(3) {
+    background-image: url(./image/pic3.jpg);
+    background-size: cover;
+}
+
+.gallery .image:nth-child(4) {
+    background-image: url(./image/pic4.jpg);
+    background-size: cover;
+}
+
+.gallery .image:nth-child(5) {
+    background-image: url(./image/pic6.jpg);
+    background-size: cover;
+}
+
+.gallery .image:nth-child(6) {
+    background-image: url(./image/pic7.jpg);
+    background-size: center;
+}
+
+.gallery .image:nth-child(7) {
+    background-image: url(./image/pic8.jpg);
+    background-size: center;
+}
+
+.gallery .image:nth-child(8) {
+    background-image: url(./image/pic9.jpg);
+    background-size: center;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <title>Profile</title>
+        <script>
+            function setName() {
+                const nameField = document.getElementById("username");
+                const name = nameField.value;
+                const title = document.getElementById("profile-link");
+                title.innerText = name + " Profile";
+            }
+
+            function setImage() {
+                const picImage = document.getElementById("picturelink");
+                const pic = picImage.value;
+                const titlepic = document.getElementById("profileImage");
+                titlepic.style.backgroundImage = "url("+pic+")";
+            }
+        </script>
+    </head>
+    <body>
+        <main>
+            <div id="profileImage" class="parent">
+                <div class="child"></div>
+            </div>
+            <a id="profile-link" href="https://github.com/Ttaiyaki">Profile</a>
+            <div class="row">
+                <p>Set Username</p>
+                <input id="username" type="text" />
+                <button onclick="setName()">Click Me!</button>
+            </div>
+            <div id="setpicture" class="row">
+                <p>Set Profile Picture</p>
+                <input id="picturelink" type="text" />
+                <button onclick="setImage()">Click Me!</button>
+            </div>
+            <div class="gallery">
+                <div class="image"></div>
+                <div id="extend-col" class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+            </div>
+        </main>
+    </body>
+</html>
